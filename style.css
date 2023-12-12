@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "Silkscreen";
+    src: url(fonts/Silkscreen/slkscrb.ttf);
+}
+
+body {
+    /* import font family */
+    background-color: #7ACC93;
+    margin: 0;
+    font-family: "Silkscreen", sans-serif;
+}
+
+.header {
+    background-color: #00330F;
+    padding: 16px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.header img {
+    height: 32px;
+    width: auto;
+}
+
+.header-title {
+    font-size: 32px;
+}
