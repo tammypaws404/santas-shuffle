@@ -1,18 +1,25 @@
 @font-face {
-    font-family: "Silkscreen";
+    font-family: "SilkscreenB";
     src: url(fonts/Silkscreen/slkscrb.ttf);
 }
 
+@font-face {
+    font-family: "Silkscreen";
+    src: url(fonts/Silkscreen/slkscr.ttf);
+}
+
 body {
-    /* import font family */
-    background-color: #7ACC93;
+    background-color: #00330F;
     margin: 0;
-    font-family: "Silkscreen", sans-serif;
+    font-family: "SilkscreenB", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .header {
     background-color: #00330F;
-    padding: 16px;
+    padding: 0 16px;
     margin: 0;
     display: flex;
     align-items: center;
@@ -26,5 +33,49 @@ body {
 }
 
 .header-title {
-    font-size: 32px;
+    margin: 12px;
+}
+
+.content {
+    background-color: #7ACC93;
+    flex: 1;
+}
+
+.tree {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tree img {
+    height: 600px;
+    margin-top: -16px;
+}
+
+.presents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.present {
+    height: 145px;
+    width: auto;
+    margin: -4px -2px;
+}
+
+.footer {
+    background-color: #00330F;
+    font-family: "Silkscreen", sans-serif;
+    color: white;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.presents {
+    position: relative;
+    margin-top: -110px;
 }
