@@ -8,6 +8,8 @@
     </head>
 
     <body>
+        <script src="script.js"></script>
+
         <div class="header">
             <img src="images/snow-flake.png" alt="Snowflake">         
             <h1 class="header-title">Santa's Shuffle</h1>
@@ -21,40 +23,41 @@
                 <input class="text-box" id="three" type="text" placeholder="Type here">
                 <input class="text-box" id="four" type="text" placeholder="Type here">
                 <input class="text-box" id="five" type="text" placeholder="Type here">
+                <button class="enter-button" type="button" onclick="storeInput()">Enter</button>
                 <img src="images/christmas-tree.png" alt="Christmas tree">
             </div>
 
             <div class="presents">
                 <div class="top">
-                    <img class="present" src="images/present.png">
-                    <img class="present" src="images/present.png">
-                    <img class="present" src="images/present.png">
-                    <img class="present" src="images/present.png">
-                    <img class="present" src="images/present.png">
-                    <img class="present" src="images/present.png">
-                    <img class="present" src="images/present.png">
-                    <img class="present" src="images/present.png">
-                    <img class="present" src="images/present.png">
-                    <img class="present" src="images/present.png">
+                    <img class="present" id="present1" onclick="choosePresent(this.id)" src="images/present.png">
+                    <img class="present" id="present2" onclick="choosePresent(this.id)" src="images/present.png">
+                    <img class="present" id="present3" onclick="choosePresent(this.id)" src="images/present.png">
+                    <img class="present" id="present4" onclick="choosePresent(this.id)" src="images/present.png">
+                    <img class="present" id="present5" onclick="choosePresent(this.id)" src="images/present.png">
+                    <img class="present" id="present6" onclick="choosePresent(this.id)" src="images/present.png">
+                    <img class="present" id="present7" onclick="choosePresent(this.id)" src="images/present.png">
+                    <img class="present" id="present8" onclick="choosePresent(this.id)" src="images/present.png">
+                    <img class="present" id="present9" onclick="choosePresent(this.id)" src="images/present.png">
+                    <img class="present" id="present10" onclick="choosePresent(this.id)" src="images/present.png">
                 </div>
                 <div class="bottom">
-                    <img class="present" src="images/present.png">
-                    <img class="present" src="images/present.png">
-                    <img class="present" src="images/present.png">
-                    <img class="present" src="images/present.png">
-                    <img class="present" src="images/present.png">
-                    <img class="present" src="images/present.png">
-                    <img class="present" src="images/present.png">
-                    <img class="present" src="images/present.png">
-                    <img class="present" src="images/present.png">
-                    <img class="present" src="images/present.png">
+                    <img class="present" id="present11" onclick="choosePresent(this.id)" src="images/present.png">
+                    <img class="present" id="present12" onclick="choosePresent(this.id)" src="images/present.png">
+                    <img class="present" id="present13" onclick="choosePresent(this.id)" src="images/present.png">
+                    <img class="present" id="present14" onclick="choosePresent(this.id)" src="images/present.png">
+                    <img class="present" id="present15" onclick="choosePresent(this.id)" src="images/present.png">
+                    <img class="present" id="present16" onclick="choosePresent(this.id)" src="images/present.png">
+                    <img class="present" id="present17" onclick="choosePresent(this.id)" src="images/present.png">
+                    <img class="present" id="present18" onclick="choosePresent(this.id)" src="images/present.png">
+                    <img class="present" id="present19" onclick="choosePresent(this.id)" src="images/present.png">
+                    <img class="present" id="present20" onclick="choosePresent(this.id)" src="images/present.png">
                 </div>
             </div>
         </div>
 
         <div class="footer">
-            <div class="guide">Next step</div>
-            <div class="credit">Tree: Mega Voxels, Snowflake: Freepik - Flaticon</div>
+            <div id="guide">Codedex Hackathon</div>
+            <div class="credit">Tree: Mega Voxels, Snowflake: Freepik-Flaticon</div>
         </div>
     </body>
 </html>

@@ -62,9 +62,14 @@ body {
 }
 
 .present {
+    position: relative;
     height: 145px;
     width: auto;
     margin: -4px -2px;
+}
+
+.present:hover {
+    top: -20px;
 }
 
 .footer {
@@ -118,4 +123,17 @@ input[type=text]:focus {
 .text-box#five {
     top: 375px;
     right: 50%;
+}
+
+.enter-button {
+    position: absolute;
+    top: 435px;
+    width: 85px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(160, 255, 219);
+    background-color: teal;
+    border: 3px solid rgb(160, 255, 219);
+    cursor: pointer;
 }
