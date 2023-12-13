@@ -79,17 +79,43 @@ body {
 
 .text-box {
     position: absolute;
-    width: 95px;
+    width: 80px;
     height: 32px;
     font-size: 16px;
     padding: 5px;
     color: teal;
+    background-color: rgb(160, 255, 219);
     outline: none;
     border: 3px solid rgb(0, 85, 57);
     transition: .3s;
 }
 
 input[type=text]:focus {
-    border-color: dodgerblue;
-    box-shadow: 0 0 8px 0 dodgerblue;
+    border-color: rgb(30, 255, 105);
+    box-shadow: 0 0 5px 0 rgb(30, 255, 105);
+}
+
+.text-box#one {
+    top: 125px;
+    right: 50%;
+}
+
+.text-box#two {
+    top: 175px;
+    left: 50%;
+}
+
+.text-box#three {
+    top: 250px;
+    right: 50%;
+}
+
+.text-box#four {
+    top: 300px;
+    left: 50%;
+}
+
+.text-box#five {
+    top: 375px;
+    right: 50%;
 }
