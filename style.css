@@ -45,6 +45,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .tree img {
@@ -56,6 +57,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    margin-top: -110px;
 }
 
 .present {
@@ -74,8 +77,19 @@ body {
     justify-content: space-between;
 }
 
+.text-box {
+    position: absolute;
+    width: 95px;
+    height: 32px;
+    font-size: 16px;
+    padding: 5px;
+    color: teal;
+    outline: none;
+    border: 3px solid rgb(0, 85, 57);
+    transition: .3s;
+}
 
-.presents {
-    position: relative;
-    margin-top: -110px;
+input[type=text]:focus {
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
 }
