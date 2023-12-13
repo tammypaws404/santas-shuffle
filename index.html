@@ -11,12 +11,28 @@
         <script src="script.js"></script>
 
         <div class="header">
-            <img src="images/snow-flake.png" alt="Snowflake">         
+            <img class="logo" onclick="window.location.reload();" src="images/snow-flake.png" alt="Snowflake">         
             <h1 class="header-title">Santa's Shuffle</h1>
             <img class="star" onclick="clickStar()" src="images/star.png" alt="Star"></img>
         </div>
 
         <div class="content">
+            <div class="instructions-card">
+                <div class="instructions">
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>Prepare to think of everything you've ever wanted</li>
+                        <li>Type 5 things you want for Christmas on the cards</li>
+                        <li>Press the yellow star to submit</li>
+                        <li>Pick 5 Xmas boxes</li>
+                        <li>Press the star again and remember what you got</li>
+                        <li>Press the snowflake to try again with new items</li>
+                        <li>You win when you get any 5 presents or when you feel less is enough</li>
+                        <p><strong>Important: Press the star only once each time you're supposed to</strong> and don't ask why :D</p>
+                    </ol>
+                </div>
+            </div>
+
             <div class="tree">
                 <input class="text-box" id="one" type="text" placeholder="Type here">
                 <input class="text-box" id="two" type="text" placeholder="Type here">

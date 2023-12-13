@@ -1,3 +1,4 @@
+// first time coding in JavaScript.. it was wild.
 
 let clickStage = 1;
 let presentsArray = []
@@ -16,24 +17,37 @@ function clickStar() {
         presentsArray.push(input4.value);
         presentsArray.push(input5.value);
 
-        alert(presentsArray);
+        document.getElementById("one").value = "";
+        document.getElementById("two").value = "";
+        document.getElementById("three").value = "";
+        document.getElementById("four").value = "";
+        document.getElementById("five").value = "";
     }
 
-    // 2nd click after user choose 5 presents. Generate random integers (20% chance of getting a present)
+    // 2nd click after user choose 5 presents. Generate random integers
     else if (clickStage == 2) {
         let randomArray = [];
         let presentsGotArray = [];
         for (let i = 0; i < 5; i++) {
             randomNum = Math.floor(Math.random() * 20);
+            randomArray.push(randomNum);
             if (!(randomNum in randomArray)) {
                 if (randomNum < 5) {
                     presentsGotArray.push(presentsArray[randomNum]);
                 }
             }
         }
-        alert(presentsGotArray);
+        if (!presentsGotArray.length) {
+            alert("You got nothing. Maybe there's coal if you look closer.")
+        }
+        else {
+            alert("You got stuff yay: " + presentsGotArray);
+        }
     }
 
+    else {
+        alert("What are you doing? Press the snowflake.")
+    }
     clickStage++;
 }
 
