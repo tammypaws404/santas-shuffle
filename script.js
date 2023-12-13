@@ -1,5 +1,3 @@
-// first time coding in JavaScript.. it was wild.
-
 let clickStage = 1;
 let presentsArray = []
 function clickStar() {
@@ -28,7 +26,7 @@ function clickStar() {
     else if (clickStage == 2) {
         let randomArray = [];
         let presentsGotArray = [];
-        for (let i = 0; i < 5; i++) {
+        for (let i = 0; i < 10; i++) {
             randomNum = Math.floor(Math.random() * 20);
             randomArray.push(randomNum);
             if (!(randomNum in randomArray)) {
@@ -39,14 +37,12 @@ function clickStar() {
         }
         if (!presentsGotArray.length) {
             alert("You got nothing. Maybe there's coal if you look closer.")
+            location.reload()
         }
         else {
             alert("You got stuff yay: " + presentsGotArray);
+            location.reload()
         }
-    }
-
-    else {
-        alert("What are you doing? Press the snowflake.")
     }
     clickStage++;
 }
